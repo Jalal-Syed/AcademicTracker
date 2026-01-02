@@ -1,5 +1,6 @@
 # Academic Tracker in C++ Finally!!!
 Perhaps this will do nothing much for now. No logic is added yet. Just the beginning.
+
 **But Hey!, where there is a will, there is a way.**
 
 ## Installation on Windows
@@ -40,7 +41,20 @@ cd /AcademicTracker/
 sudo apt-get update
 sudo apt-get install git cmake
 ```
-
+### Installation:
+1. Clone the Github Repo using 
+```bash
+git clone https://github.com/Jalal-Syed/AcademicTracker.git
+cd AcademicTracker/
+```
+2. Build the Project using the following command
+```bash
+   mkdir build
+   cd build
+   cmake ..
+   cmake --build .
+```
+3. Finally, run the Project using `./AcademicTracker`
 
 ## Installation on Linux (FEDORA)
 ### Prerequisites:
@@ -54,3 +68,17 @@ sudo dnf install gcc g++
 sudo dnf update
 sudo dnf install git cmake
 ```
+### Installation:
+1. Clone the Github Repo using
+```bash
+git clone https://github.com/Jalal-Syed/AcademicTracker.git
+cd AcademicTracker/
+```
+2. Build the Project using the following command
+```bash
+   mkdir build
+   cd build
+   cmake ..
+   cmake --build .
+```
+3. Finally, run the Project using `./AcademicTracker`
