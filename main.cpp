@@ -20,15 +20,16 @@ int WelcomeMenu() {
             return Choice;
         }
         else {
+            std::cout << "Invalid Choice." <<std::endl;
             for (int i = 3; i >= 1; i--) {
-                std::cout << "Invalid Choice. Please try again in " << i << " seconds." << std::endl;
-                std::this_thread::sleep_for(std::chrono::seconds(2));
+                std::cout << "Please try again in " << i << " seconds." <<std::endl;
+                std::this_thread::sleep_for(std::chrono::seconds(1));
             }
         }
     }
 }
 
-int MainMenu() {
+int MainMenu() {            //Main Menu of the program
 
     std::cout << "\n====================" << std::endl;
     std::cout << "     MAIN MENU" << std::endl;
@@ -55,22 +56,22 @@ int main() {
                     Running = false;
                     break;
                 case 1 :
-                    AcademicStatus();  //calling AcademicStatus Function
+                    AcademicStatus();  //calling AcademicStatus Func
                     break;
                 case 2 :
                     AddSemester();     //calling AddSemester Func
                     break;
                 case 3 :
-                    AddSubject();
+                    AddSubject();      //calling AddSubject Func
                     break;
                 case 4 :
-                    AddLab();
+                    AddLab();          //calling AddLab Func
                     break;
                 case 5 :
-                    AddNCS();
+                    AddNCS();          //calling AddNCS Func
                     break;
                 case 6 :
-                    AddProject();
+                    AddProject();      //calling AddProject Func
                     break;
                 default:
                     std::cout << "\n=============================" << std::endl;
@@ -93,7 +94,14 @@ int BackToMainMenu() {
     if (Choice == 0) {
         Running = false;
     }
-    return Choice;
+    else {
+        std::cout << "Invalid Choice." <<std::endl;
+        for (int i = 3; i >= 1; i--) {
+            std::cout << "\n\nPlease try again in " << i << " seconds." << std::endl;
+            std::this_thread::sleep_for(std::chrono::seconds(1));
+        }
+        return Choice;
+    }
 }
 
 void AcademicStatus(){

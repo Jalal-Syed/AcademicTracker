@@ -13,8 +13,14 @@ inline bool Running = true;
 inline short TempNumber;
 inline int Choice;
 
-typedef struct Semester{
-    char *SemesterName;
-} Semester;
+class Semester {
+    public:
+
+};
+
+class Subject {
+    public:
+
+};
 
 
