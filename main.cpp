@@ -93,43 +93,56 @@ int BackToMainMenu() {
 
     if (Choice == 0) {
         Running = false;
+        return Choice;
     }
     else {
         std::cout << "Invalid Choice." <<std::endl;
         for (int i = 3; i >= 1; i--) {
-            std::cout << "\n\nPlease try again in " << i << " seconds." << std::endl;
+            std::cout << "Please try again in " << i << " seconds." << std::endl;
             std::this_thread::sleep_for(std::chrono::seconds(1));
         }
         return Choice;
     }
+    return Choice;
 }
 
 void AcademicStatus(){
     std::cout << "Academic Status: " << std::endl;
+    std::this_thread::sleep_for(std::chrono::seconds(3));
     BackToMainMenu();
 }
 
 void AddSemester(){
     std::cout << "Semester Added. \n" << std::endl;
+        std::this_thread::sleep_for(std::chrono::seconds(3));
+
     BackToMainMenu();
 }
 
 void AddSubject(){
     std::cout << "Subject Added " << std::endl;
+        std::this_thread::sleep_for(std::chrono::seconds(3));
+
     BackToMainMenu();
 }
 
 void AddLab(){
     std::cout << "Lab Added " << std::endl;
+        std::this_thread::sleep_for(std::chrono::seconds(3));
+
     BackToMainMenu();
 }
 
 void AddNCS(){
     std::cout << "NCS Added " << std::endl;
+        std::this_thread::sleep_for(std::chrono::seconds(3));
+
     BackToMainMenu();
 }
 
 void AddProject(){
     std::cout << "Project Added " << std::endl;
+        std::this_thread::sleep_for(std::chrono::seconds(3));
+
     BackToMainMenu();
 }
